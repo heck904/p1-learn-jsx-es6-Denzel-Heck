@@ -21,7 +21,19 @@ class App extends Component {
     example();
     console.log(`----------------`)
 
-    
+
+    //Example 2: Arrow Functions
+    console.log(`Example 2: Arrow Functions`)
+    var num = (num1 , num2) => {
+      var total = num1 + num2;
+      return total;
+    }
+    console.log(`Addition Problem For 2nd grader`)
+    console.log(`Student was asked to add five plus six = ` + num(5, 6));
+    console.log(`---------------`)
+
+
+    //Example 3: Destructuring Assignment
     return (
       <div className="App">
         <header className="App-header">
