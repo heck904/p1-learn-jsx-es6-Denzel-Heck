@@ -95,6 +95,7 @@ console.log(`Example 7: Spread Operator`)
   pants.quality = pantsquality1(pants, "Low").quality
   console.log(pants)
   console.log(`----------------------`)
+  
   //Example 8: Array.filter
   console.log(`Example 8: Array.filter`)
   const roads = [
@@ -107,7 +108,21 @@ console.log(`Example 7: Spread Operator`)
   const startsB = roads.filter(roads => roads[0] === "B")
   console.log(startsB)
   console.log(`-----------------------`)
+
+  //Example 9: Array.map
+  console.log(`Example 9: Array.map`)
+  const roads1 = [
+  "Baytree",
+  "Bemiss",
+  "Patterson",
+  "Gordon"
+  ]
+  console.log(roads1)
+  const streets = roads1.map(roads => `${roads} Street`)
+  console.log(streets)
+  console.log(`-------------------------`)
   
+
 
 
     return (
