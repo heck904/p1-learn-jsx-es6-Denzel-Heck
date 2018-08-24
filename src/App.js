@@ -42,7 +42,25 @@ class App extends Component {
     console.log(`----------------`)
 
     //Example 4 : The Spread Operator
-    
+    console.log(`Example 4: The Spread Operator`)
+    var GamingConsole = {
+    brand: 'Sony',
+    model: 'PS4',
+    Connection: 'Wired',
+    Add_Ons: ['controller','color cords', 'fan']
+  };
+
+  let {brand,model} = GamingConsole;
+  console.log(brand,model);
+
+  let specs = GamingConsole =>{
+    console.log(`${GamingConsole.Connection} ${GamingConsole.brand} ${GamingConsole.model} is the best`);
+  }
+  specs(GamingConsole);
+
+  console.log('-------------------');
+
+  //Example 5 : 
     return (
       <div className="App">
         <header className="App-header">
