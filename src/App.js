@@ -62,22 +62,43 @@ class App extends Component {
 
   //Example 6 : Object.assign
   console.log(`Example 6: Object.assign`)
-  let pants = {
+  var pants = {
     type: "skinny",
     material: "jeans",
     brand: 'Levi',
     quality: 'High quality'
   }
-
+console.log(pants)
   var pantsquality = function(type, quality) {
     return Object.assign({}, type, {quality:quality})
   }
-
+pants.quality = pantsquality(pants, "Low").quality
   console.log(pants)
-  console.log(pantsquality(pants, "High").quality)
-  console.log(pantsquality)
+
+  //console.log(pantsquality)
 
   console.log('-------------------');
+  //Example 7 : The Spread Operator
+console.log(`Example 7: Spread Operator`)
+  var pants = {
+    type: "skinny",
+    material: "jeans",
+    brand: 'Levi',
+    quality: 'High quality'
+  }
+  console.log(pants)
+  const pantsquality1 = (type, quality) =>
+  ({
+    ...type,
+    quality
+  })
+  pants.quality = pantsquality1(pants, "Low").quality
+  console.log(pants)
+  console.log(`----------------------`)
+  
+
+
+
     return (
       <div className="App">
         <header className="App-header">
