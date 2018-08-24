@@ -121,8 +121,20 @@ console.log(`Example 7: Spread Operator`)
   const streets = roads1.map(roads => `${roads} Street`)
   console.log(streets)
   console.log(`-------------------------`)
-  
 
+  //Example 10: Array.slice
+  console.log(`Example 10: Array.slice`)
+  const names = [
+  "Alex",
+  "Alexis",
+  "Chad",
+  "Adam"
+  ]
+  console.log(`The names will be sorted since they are not the same`)
+  console.log(names)
+  console.log(names.slice(0,3).sort())
+  console.log(`----------------------------`)
+  
 
 
     return (
