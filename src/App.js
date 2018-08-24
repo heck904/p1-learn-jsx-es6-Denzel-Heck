@@ -134,10 +134,23 @@ console.log(`Example 7: Spread Operator`)
   console.log(names)
   console.log(names.slice(0,3).sort())
   console.log(`----------------------------`)
-  
+
+  //Example 11: Array.reduce
+  console.log(`Example 11: Array.reduce`)
+    const int = [ 50, 6, 85, 20, 12, 41, 27, 90];
+    const minNum = int.reduce((l,m) => {
+      console.log(`${m} > ${l} = ${l > m}`);
+      if (m < l) {
+        return m
+      } else {
+        return l
+      }
+    }, 90)
+    console.log(`Minimum Integer: `, minNum);
+    console.log(`----------------------`)
 
 
-    return (
+      return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
