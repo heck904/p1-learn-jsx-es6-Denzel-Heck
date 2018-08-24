@@ -60,7 +60,24 @@ class App extends Component {
 
   console.log('-------------------');
 
-  //Example 5 : 
+  //Example 6 : Object.assign
+  console.log(`Example 6: Object.assign`)
+  let pants = {
+    type: "skinny",
+    material: "jeans",
+    brand: 'Levi',
+    quality: 'High quality'
+  }
+
+  var pantsquality = function(type, quality) {
+    return Object.assign({}, type, {quality:quality})
+  }
+
+  console.log(pants)
+  console.log(pantsquality(pants, "High").quality)
+  console.log(pantsquality)
+
+  console.log('-------------------');
     return (
       <div className="App">
         <header className="App-header">
