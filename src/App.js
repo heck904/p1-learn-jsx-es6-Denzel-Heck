@@ -95,8 +95,19 @@ console.log(`Example 7: Spread Operator`)
   pants.quality = pantsquality1(pants, "Low").quality
   console.log(pants)
   console.log(`----------------------`)
-  
+  //Example 8: Array.filter
+  console.log(`Example 8: Array.filter`)
+  const roads = [
+  "Baytree",
+  "Bemiss",
+  "Patterson",
+  "Gordon"
+  ]
 
+  const startsB = roads.filter(roads => roads[0] === "B")
+  console.log(startsB)
+  console.log(`-----------------------`)
+  
 
 
     return (
