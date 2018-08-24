@@ -34,6 +34,15 @@ class App extends Component {
 
 
     //Example 3: Destructuring Assignment
+    console.log(`Example 3 : Destructuring Assignment`)
+    var [firstscore] = [21, 42, 7]
+    console.log(`Array: 21,42,7`)
+    var [,secondScore,] = [14, 35, 10]
+    console.log(`The second number is ` + secondScore)
+    console.log(`----------------`)
+
+    //Example 4 : The Spread Operator
+    
     return (
       <div className="App">
         <header className="App-header">
